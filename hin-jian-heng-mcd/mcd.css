@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+  
+.pending-area, .complete-area,.proccessing-area {
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 45%;
+    flex: 1;
+    background-color: #fff;
+    border-radius: 5px;
+}
+  
+.controls {
+    text-align: center;
+    margin-top: 20px;
+}
+  
+
+button {
+  appearance: button;
+  background-color: #4D4AE8;
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, .15), rgba(255, 255, 255, 0));
+  border: 1px solid #4D4AE8;
+  border-radius: 1rem;
+  box-shadow: rgba(255, 255, 255, 0.15) 0 1px 0 inset,rgba(46, 54, 80, 0.075) 0 1px 1px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Inter,sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5;
+  padding: 10px 20px;
+  margin: 0 5px;
+  text-align: center;
+  text-transform: none;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+}
+
+
+button:hover {
+  background-color: #3733E5;
+  border-color: #3733E5;
+}
+
+#bot-area {
+    margin-bottom: 20px;
+}
+  
+.pending-area h2,
+.proccessing-area h2,
+.complete-area h2 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+#pending-orders,
+#processing-orders,
+#completed-orders {
+  margin-top: 10px;
+}

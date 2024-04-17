@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>McDonald's Order Management</title>
+  <link rel="stylesheet" href="mcd.css">
+</head>
+<body>
+    <h1>McDonald's Order Management</h1>
+    <div class="controls">
+        <button onclick="createOrder('normal')">New Normal Order</button>
+        <button onclick="createOrder('vip')">New VIP Order</button>
+        <button onclick="addBot()">+ Bot</button>
+        <button onclick="removeBot()">- Bot</button>
+    </div> 
+    <div id="bot-area"></div>
+    <div class="container">
+        <div class="pending-area">
+        <h2>PENDING</h2>
+        <div id="pending-orders"></div>
+        </div>
+        <div class="proccessing-area">
+            <h2>Processing</h2>
+            <div id="processing-orders"></div>
+        </div>
+        <div class="complete-area">
+        <h2>COMPLETE</h2>
+        <div id="completed-orders"></div>
+        </div>
+    </div>
+    
+    <script src="mcd.js"></script>
+</body>
+</html>
